@@ -30,7 +30,7 @@
         }
     }
 
-    // Faz a requisição dos repositórios quando o componente é montado e também após atualizações
+    // Faz a requisição dos repositórios.
     onMount(() => {
         if (usuario) {
             fetchRepositorios(usuario.login);
@@ -43,8 +43,6 @@
         }
     });
 </script>
-
-<!-- O restante do seu código permanece o mesmo -->
 
 {#if usuario != null}
     <div class="card card-side bg-base-300 shadow-xl max-w-3xl mt-16">
@@ -90,7 +88,7 @@
                                 href={repositorio.url}
                                 target="_blank"
                                 rel="noopener"
-                                class="flex text-lg"
+                                class="flex"
                             >
                                 {repositorio.name}
                             </a>

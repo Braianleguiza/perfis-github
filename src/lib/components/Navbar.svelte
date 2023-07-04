@@ -3,8 +3,6 @@
     import BsGithub from "svelte-icons-pack/bs/BsGithub";
     import BsLinkedin from "svelte-icons-pack/bs/BsLinkedin";
     import Form from "./Form.svelte";
-    import type IUsuario from "$lib/interfaces/IUsuario";
-    import montaUsuario from "$lib/utils/montaUsuario";
 </script>
 
 <div class="navbar bg-base-300">
@@ -38,13 +36,15 @@
                     >
                 </li>
                 <li>
-                    <a href="https://my-personal-portfolio-nine.vercel.app/"
+                    <a
+                        href="https://my-personal-portfolio-nine.vercel.app/portfolio"
                         >Portfolio</a
                     >
                 </li>
                 <li>
-                    <a href="https://my-personal-portfolio-nine.vercel.app/"
-                        >About</a
+                    <a
+                        href="https://my-personal-portfolio-nine.vercel.app/contact"
+                        >Contact</a
                     >
                 </li>
             </ul>
